@@ -37,10 +37,37 @@ const App = () => {
             creating performance-optimized experiences that turn complex information into intuitive designs.
           </p>
           
-          <div className="mt-10 flex gap-6">
-            <a href="#" className="p-2 hover:text-white transition-colors"><Github size={22} /></a>
-            <a href="#" className="p-2 hover:text-white transition-colors"><Linkedin size={22} /></a>
-            <a href="#" className="p-2 hover:text-white transition-colors"><Mail size={22} /></a>
+          <div className="mt-10 flex gap-4">
+            {/* GitHub */}
+            <a 
+              href="https://github.com/swpark8/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-slate-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all duration-300"
+              aria-label="GitHub Profile"
+            >
+              <Github size={20} />
+            </a>
+
+            {/* LinkedIn */}
+            <a 
+              href="https://www.linkedin.com/in/park-sang-won-0734033a2/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-slate-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all duration-300"
+              aria-label="LinkedIn Profile"
+            >
+              <Linkedin size={20} />
+            </a>
+
+            {/* Mail */}
+            <a 
+              href="mailto:여기에_이메일_주소_입력" 
+              className="p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-slate-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all duration-300"
+              aria-label="Send Email"
+            >
+              <Mail size={20} />
+            </a>
           </div>
         </header>
 
